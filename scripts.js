@@ -1,29 +1,21 @@
-function insert(num)
-{
-const number = document.getElementById('result').innerHTML;
- document.getElementById('result').innerHTML = number + num;
+let getEl = document.getElementById('result')
+const insert = num => {
+  const number = getEl.innerHTML
+  getEl.innerHTML = number + num
 }
 
-function clean()
-{
-document.getElementById('result').innerHTML = "";
+const clean = () => (getEl.innerHTML = '')
+
+const percent = () => {
+  const numb = getEl.innerHTML
+  getEl.innerHTML = numb * 0.01
 }
 
-function percent() {
-const numb = document.getElementById('result').innerHTML;
-document.getElementById('result').innerHTML= (numb*0.01);
-}
-
-function calculator()
-{
-const results = document.getElementById('result').innerHTML;
-if(results)
-{
-document.getElementById('result').innerHTML = eval(results);
-}
-else
-{
-document.getElementById('result').innerHTML = "Nothing..."
- }
-
+const calculator = () => {
+  const result = getEl.innerHTML
+  if (result) {
+    getEl.innerHTML = eval(result)
+  } else {
+    getEl.innerHTML = 'Nothing...'
+  }
 }
