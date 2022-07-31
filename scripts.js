@@ -1,21 +1,27 @@
-let getEl = document.getElementById('result')
+
+//Get string on display with numbers and operator
+let getDisplay = document.getElementById('result')
 const insert = num => {
-  const number = getEl.innerHTML
-  getEl.innerHTML = number + num
+const number = getDisplay.innerHTML
+getDisplay.innerHTML = number + num
 }
 
-const clean = () => (getEl.innerHTML = '')
+//Clear
+const clean = () => (getDisplay.innerHTML = '')
 
+//Percent
 const percent = () => {
-  const numb = getEl.innerHTML
-  getEl.innerHTML = numb * 0.01
+const display = getDisplay.innerHTML
+getDisplay.innerHTML = display * 0.01
+
 }
 
+//Action
 const calculator = () => {
-  const result = getEl.innerHTML
-  if (result) {
-    getEl.innerHTML = eval(result)
-  } else {
-    getEl.innerHTML = 'Nothing...'
+const result = getDisplay.innerHTML
+if (result) {
+getDisplay.innerHTML = stringMath(result)
+} else {
+getDisplay.innerHTML = 'Nothing...'
   }
 }
