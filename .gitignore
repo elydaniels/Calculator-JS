@@ -1,7 +1,9 @@
+#ignore
 .gitignore
 404.html
 firebase.json
 .firebaserc
+
 
 # Logs
 logs
