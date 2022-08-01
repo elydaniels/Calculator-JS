@@ -1,7 +1,7 @@
-
+# Ignore files
 *.gitignore
-#404.html
-#firebase.json
+404.html
+firebase.json
 *.firebaserc
 
 
