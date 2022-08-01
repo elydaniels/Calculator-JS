@@ -1,8 +1,10 @@
 # Ignore files
-*/.gitignore
-*/404.html
-*/firebase.json
-*/.firebaserc
+/*
+.gitignore
+404.html
+firebase.json
+.firebaserc
+
 
 
 # Logs
