@@ -1,5 +1,5 @@
 # Calculator-JS
-Creating a Calculator with Javascript
+Creating a Calculator with Javascript without eval function (stringMath)
 
 ## Parameters
 - HTML 
